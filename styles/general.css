@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo+Narrow');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Abhaya+Libre:600');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow:400i');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow:700i');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -47,6 +49,9 @@ table {
     border-spacing: 0;
 }
 
+.clear{
+    clear: both;
+}
 
 .wrapper{
     width: 100%;
@@ -213,7 +218,7 @@ table {
 }
 
 .wrapper_slider{
-    width: 100%;
+    width: 10000px;
     height: inherit;
 }
 
@@ -224,6 +229,7 @@ table {
     padding-left: 120px;
     box-sizing: border-box;
     padding-top: 240px;
+    float: left;
 }
 
 .slider_arrows{
@@ -287,6 +293,19 @@ table {
     margin-top: 65px;
 }
 
+.tabs_wrapper{
+    width: 1110px;
+    height: 932px;
+    position: relative;
+    overflow: hidden;
+}
+.tabs_gifts{
+    width: 10000px;
+    height: inherit;
+    position: relative;
+    float: left;
+}
+
 .tabs_links{
     height: 45px;
     width: fit-content;
@@ -321,13 +340,6 @@ table {
     border-bottom: 2px solid #444444;
 }
 
-.tabs_gifts{
-    width: 1110px;
-    height: 932px;
-    position: relative;
-    overflow: hidden;
-}
-
 .tabs_gifts .tab{
     width: 1110px;
     height: 932px;
@@ -337,16 +349,80 @@ table {
 }
 
 .gift{
-    width: 260px;
+    width: 261px;
     height: 455px;
     float: left;
     margin-right: 22px;
     margin-bottom: 22px;
-    background-color: #e5e5e5;
+    position: relative;
 }
 
 .gift:nth-child(4n){
     margin-right: 0;
 }
 
+.gift_img{
+    width: 261px;
+    height: 339px;
+    background-color: #e5e5e5;
+}
 
+.gift_brand_rate{
+    width: 100%;
+    margin-top: 21px;
+}
+
+.gift_brand{
+    font-size: 12px;
+    color: #bcbcbc;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.gift_title{
+    color: #5d5d5d;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    height: 33px;
+    clear: both;
+}
+
+.gift_category{
+    display: none;
+}
+
+.gift_prices{
+    height: 15px;
+    position: relative;
+    bottom: -20px;
+    color: #333333;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.old_price{
+    color: #bfbfbf;
+    font-size: 16px;
+    text-decoration: line-through;
+}
+
+.gift_rate{
+    float: right;
+}
+
+.star{
+    background: url("../img/star_non_active.png") no-repeat;
+    width: 12px;
+    height: 11px;
+    float: left;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.star.active{
+    background: url("../img/star_active.png") no-repeat;
+}
