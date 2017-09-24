@@ -677,3 +677,154 @@ table {
     margin-right: 0;
 }
 
+.dop_menu, .bestsellers, .latest_deals{
+    display: block;
+    margin-bottom: 65px;
+}
+
+.dop_menu .title, .bestsellers .title, .latest_deals .title{
+    color: #313537;
+    font-size: 17px;
+    font-family: 'Archivo Narrow', serif;
+    text-transform: uppercase;
+    width: 100%;
+    display: block;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #313537;
+}
+
+.bestsellers .title, .latest_deals .title{
+    margin-bottom: 35px;
+}
+
+.dop_menu .left_menu li{
+    height: 44px;
+    line-height: 44px;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.dop_menu .left_menu li a{
+    color: #555555;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    padding-left: 10px;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+.dop_menu .left_menu li a:hover{
+    background-color: #f3f3f3;
+}
+
+.arrows{
+    float: right;
+    margin-top: 5px;
+}
+
+.arrows div{
+    float: left;
+    cursor: pointer;
+}
+
+.arrows .left_arrow{
+    background: url("../img/arrow_left.png") no-repeat;
+    background-size: contain;
+    height: 9px;
+    width: 19px;
+}
+
+.arrows .right_arrow{
+    background: url("../img/arrow_right.png") no-repeat;
+    background-size: contain;
+    height: 9px;
+    width: 19px;
+}
+
+
+.bestsellers{
+    overflow: hidden;
+}
+
+.bestsellers_sliders{
+    width: 700px;
+    height: 450px;
+    position: relative;
+}
+
+.bestseller_slide{
+    width: 350px;
+    height: 450px;
+    position: relative;
+    float: left;
+}
+
+.bestseller_gift_left{
+    display: block;
+    margin-bottom: 30px;
+    width: 350px;
+    float: left;
+}
+
+.bestseller_gift_left:last-child{
+    margin-bottom: 0;
+}
+
+.bestsellers_gift_left_picture{
+    width: 100px;
+    height: 130px;
+    float: left;
+    margin-right: 25px;
+    background-color: #e7e7e7;
+}
+
+.bestsellers_gift_left_info{
+    float: left;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.bestsellers_gift_left_brand{
+    display: block;
+    font-size: 11px;
+    font-family: "Roboto", sans-serif;
+    color: #bcbcbc;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+}
+
+.bestsellers_gift_left_name{
+    display: block;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    color: #5d5d5d;
+    margin-bottom: 11px;
+}
+
+.bestsellers_gift_left_prices{
+    display: block;
+    font-size: 17px;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    color: #333333;
+}
+
+.latest_deals_slide .special_gift_main_img{
+    width: 350px;
+}
+
+
+
+/* footer */
+
+.wrapper_footer{
+    height: 713px;
+    width: 100%;
+    background-color: #323232;
+}
+
+#footer{
+    width: 1500px;
+}
