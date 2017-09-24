@@ -288,7 +288,7 @@ table {
     cursor: pointer;
 }
 
-.gifts{
+.gifts, .advertising, .special_gifts, .brands{
     width: 1110px;
     margin-top: 65px;
 }
@@ -299,11 +299,12 @@ table {
     position: relative;
     overflow: hidden;
 }
+
 .tabs_gifts{
-    width: 10000px;
+    width: 4440px;
     height: inherit;
-    position: relative;
-    float: left;
+    position: absolute;
+    left: 0;
 }
 
 .tabs_links{
@@ -361,10 +362,74 @@ table {
     margin-right: 0;
 }
 
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 .gift_img{
     width: 261px;
     height: 339px;
     background-color: #e5e5e5;
+    position: relative;
+}
+
+.gift_img_hover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #d1d1d1;
+    display: none;
+}
+
+.gift_img:hover .gift_img_hover{
+    cursor: pointer;
+    display: block;
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+}
+
+.gift_icons{
+    margin: 0 auto;
+    position: relative;
+    width: fit-content;
+    top: 50%;
+    margin-top: -22px;
+}
+
+.gift_icon{
+    float: left;
+    margin-right: 15px;
+}
+
+.gift_icon:last-child{
+    margin-right: 0;
+}
+
+.gift_icon.buy{
+    background: url("../img/add_to_cart.png") no-repeat center;
+    width: 45px;
+    height: 45px;
+}
+
+.gift_icon.favor{
+    background: url("../img/add_to_compare.png") no-repeat center;
+    width: 45px;
+    height: 45px;
+}
+
+.gift_icon.quick{
+    background: url("../img/quick_view.png") no-repeat center;
+    width: 45px;
+    height: 45px;
 }
 
 .gift_brand_rate{
@@ -426,3 +491,149 @@ table {
 .star.active{
     background: url("../img/star_active.png") no-repeat;
 }
+
+.gift_special{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    z-index: 100;
+}
+
+.gift_special.sales{
+    background-color: red;
+    color: white;
+}
+
+.gift_special.outofstocks{
+    background-color: #d2cbc3;
+    color: white;
+}
+
+.left_advertising{
+    width: 550px;
+    float: left;
+}
+
+.right_advertising{
+    width: 530px;
+    height: 530px;
+    float: right;
+}
+
+.left_advertising .advert{
+    width: 550px;
+    height: 250px;
+    margin-bottom: 30px;
+    background-color: #e5e5e5;
+}
+
+.right_advertising .advert{
+    width: 530px;
+    height: 530px;
+    background-color: #e5e5e5;
+}
+
+.left_advertising .advert:last-child{
+    margin-bottom: 0;
+}
+
+.special_gift_small{
+    width: 100%;
+    float: left;
+    margin-bottom: 40px;
+}
+
+.special_gift_link{
+    text-decoration: none;
+}
+
+.special_gifts_column:nth-child(n + 1){
+    float: left;
+    width: 355px;
+}
+
+.special_gifts_column:last-child{
+    float: left;
+    width: 400px;
+}
+
+.special_gift_img{
+    width: 140px;
+    height:182px;
+    background-color: #e5e5e5;
+    float: left;
+    margin-right: 20px;
+}
+
+.special_gift_main_img{
+    width: 400px;
+    height: 520px;
+    margin-bottom: 30px;
+    background-color: #e5e5e5;
+}
+
+.special_gift_info{
+    padding-top: 16px;
+    box-sizing: border-box;
+}
+
+.special_gift_brand, .special_gift_main_brand{
+    color: #bcbcbc;
+    font-family: "Roboto", sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 13px;
+}
+
+.special_gift_name, .special_gift_main_name{
+    color: #5d5d5d;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 13px;
+}
+
+.special_gift_rate{
+    display: block;
+    margin-bottom: 13px;
+    height: 12px;
+}
+
+.special_gift_rate .star:first-child{
+    margin-left: 0;
+}
+
+.special_gift_prices, .special_gift_main_prices{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-style: italic;
+    color: #333333;
+    font-weight: 700;
+}
+
+.special_gift_main_rate{
+    float: right;
+}
+
+.special_gifts_title{
+    position: relative;
+    margin: 0 auto;
+    height: 45px;
+    width: fit-content;
+    margin-bottom: 65px;
+}
+
+.special_gifts_title span{
+    border-bottom: 2px solid #444444;
+    padding: 15px;
+    text-transform: uppercase;
+    font-family: 'Archivo Narrow', serif;
+    font-size: 15px;
+}
+
+
