@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Main Page</title>
+    <link href="styles/general.css" rel="stylesheet">
+    <script
+            src="http://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts/general.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="wrapper_header">
+        <header id="main_header">
+            <div class="top_header">
+                <div class="slogan">
+                    <span>Now shopping in Canada.</span>
+                </div>
+                <div class="header_top_menu">
+                    <ul>
+                        <li><a href="#">My favorites</a></li>
+                        <li><a href="#">Checkout</a></li>
+                        <li><a href="#">My wishlist</a></li>
+                        <li><a href="#">Currency</a></li>
+                        <li><a href="#">Language</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mid_header">
+                <div class="logo">
+                    <!--<img src="logo.png" alt="" />-->
+                    <span>AURAY</span>
+                </div>
+                <div class="top_icons">
+                    <a href="#" class="top_icon"><img src="img/block.png" alt=""></a>
+                    <a href="#" class="top_icon"><img src="img/message.png" alt=""></a>
+                    <a href="#" class="top_icon"><img src="img/cart.png" alt=""></a>
+                </div>
+                <div class="search">
+                    <div class="search_select">
+                        <select name="search_categories" class="search_categories">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="bot_header">
+                <div class="main_menu">
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">shop</a></li>
+                        <li><a href="#">pages</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">portfolio</a></li>
+                        <li><a href="#">contact us</a></li>
+                        <li><a href="#">lookbook</a></li>
+                        <li><a href="#">delivery</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </div>
+    <main id="content">
+        <section class="main_content">
+            <div class="breadcrumps">
+                <a class="links" href="/">Главная</a> <span class="bread_arrow"></span> <span class="current_link">Категория</span>
+            </div>
+            <div class="main_category">
+
+            </div>
+            <div class="gift_action">
+                <div class="button_compare">
+                    <span>Сравнить</span>
+                </div>
+                <div class="select_sort">
+                    <select class="sort">
+                        <option>По умолчанию</option>
+                        <option>По цене (убыв)</option>
+                        <option>По цене (возр)</option>
+                        <option>По популярности (убыв)</option>
+                        <option>По популярности (возр)</option>
+                    </select>
+                </div>
+                <div class="top_pagination">
+                    <a class="page" href="#" data-page="1">1</a>
+                    <a class="page" href="#" data-page="2">2</a>
+                    <a class="page" href="#" data-page="3">3</a>
+                    <a class="page" href="#" data-page="4">4</a>
+                    <a class="page" href="#" data-page="next"> > </a>
+                </div>
+            </div>
+            <div class="gifts">
+                <div id="special" class="tab">
+                    <div class="gift">
+                        <div class="gift_special sales">-20%</div>
+                        <div class="gift_img">
+                            <img src="" alt="">
+                            <div class="gift_img_hover">
+                                <div class="gift_icons">
+                                    <div class="gift_icon buy"></div>
+                                    <div class="gift_icon favor"></div>
+                                    <div class="gift_icon quick"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gift_brand_rate">
+                            <div class="gift_brand">
+                                <span>Бренд</span>
+                            </div>
+                            <div class="gift_rate">
+                                <div class="star active"></div>
+                                <div class="star active"></div>
+                                <div class="star active"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                            </div>
+                        </div>
+                        <div class="gift_title">
+                            <span>Название продукта Название продукта Название продукта</span>
+                        </div>
+                        <div class="gift_category">
+                            <span>Категория продукта</span>
+                        </div>
+                        <div class="gift_prices">
+                            <span class="old_price">1000 руб.</span>
+                            <span class="price">500 руб.</span>
+                        </div>
+                    </div>
+                    <div class="gift">
+                        <div class="gift_special outofstocks">нет в наличии</div>
+                        <div class="gift_img">
+                            <img src="" alt="">
+                            <div class="gift_img_hover">
+                                <div class="gift_icons">
+                                    <div class="gift_icon buy"></div>
+                                    <div class="gift_icon favor"></div>
+                                    <div class="gift_icon quick"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gift_brand_rate">
+                            <div class="gift_brand">
+                                <span>Бренд</span>
+                            </div>
+                            <div class="gift_rate">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                            </div>
+                        </div>
+                        <div class="gift_title">
+                            <span>Название продукта</span>
+                        </div>
+                        <div class="gift_category">
+                            <span>Категория продукта</span>
+                        </div>
+                        <div class="gift_prices">
+                            <span class="old_price">1000 руб.</span>
+                            <span class="price">500 руб.</span>
+                        </div>
+                    </div>
+                    <div class="gift">
+                        <div class="gift_special"></div>
+                        <div class="gift_img">
+                            <img src="" alt="">
+                            <div class="gift_img_hover">
+                                <div class="gift_icons">
+                                    <div class="gift_icon buy"></div>
+                                    <div class="gift_icon favor"></div>
+                                    <div class="gift_icon quick"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gift_brand_rate">
+                            <div class="gift_brand">
+                                <span>Бренд</span>
+                            </div>
+                            <div class="gift_rate">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                            </div>
+                        </div>
+                        <div class="gift_title">
+                            <span>Название продукта</span>
+                        </div>
+                        <div class="gift_category">
+                            <span>Категория продукта</span>
+                        </div>
+                        <div class="gift_prices">
+                            <span class="old_price">1000 руб.</span>
+                            <span class="price">500 руб.</span>
+                        </div>
+                    </div>
+                    <div class="gift">
+                        <div class="gift_special"></div>
+                        <div class="gift_img">
+                            <img src="" alt="">
+                            <div class="gift_img_hover">
+                                <div class="gift_icons">
+                                    <div class="gift_icon buy"></div>
+                                    <div class="gift_icon favor"></div>
+                                    <div class="gift_icon quick"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gift_brand_rate">
+                            <div class="gift_brand">
+                                <span>Бренд</span>
+                            </div>
+                            <div class="gift_rate">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                            </div>
+                        </div>
+                        <div class="gift_title">
+                            <span>Название продукта</span>
+                        </div>
+                        <div class="gift_category">
+                            <span>Категория продукта</span>
+                        </div>
+                        <div class="gift_prices">
+                            <span class="old_price">1000 руб.</span>
+                            <span class="price">500 руб.</span>
+                        </div>
+                    </div>
+                    <div class="gift">
+                        <div class="gift_special"></div>
+                        <div class="gift_img">
+                            <img src="" alt="">
+                            <div class="gift_img_hover">
+                                <div class="gift_icons">
+                                    <div class="gift_icon buy"></div>
+                                    <div class="gift_icon favor"></div>
+                                    <div class="gift_icon quick"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gift_brand_rate">
+                            <div class="gift_brand">
+                                <span>Бренд</span>
+                            </div>
+                            <div class="gift_rate">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                            </div>
+                        </div>
+                        <div class="gift_title">
+                            <span>Название продукта</span>
+                        </div>
+                        <div class="gift_category">
+                            <span>Категория продукта</span>
+                        </div>
+                        <div class="gift_prices">
+                            <span class="old_price">1000 руб.</span>
+                            <span class="price">500 руб.</span>
+                        </div>
+                    </div>
+                    <div class="gift">
+                        <div class="gift_special"></div>
+                        <div class="gift_img">
+                            <img src="" alt="">
+                            <div class="gift_img_hover">
+                                <div class="gift_icons">
+                                    <div class="gift_icon buy"></div>
+                                    <div class="gift_icon favor"></div>
+                                    <div class="gift_icon quick"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gift_brand_rate">
+                            <div class="gift_brand">
+                                <span>Бренд</span>
+                            </div>
+                            <div class="gift_rate">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                            </div>
+                        </div>
+                        <div class="gift_title">
+                            <span>Название продукта</span>
+                        </div>
+                        <div class="gift_category">
+                            <span>Категория продукта</span>
+                        </div>
+                        <div class="gift_prices">
+                            <span class="old_price">1000 руб.</span>
+                            <span class="price">500 руб.</span>
+                        </div>
+                    </div>
+                    <div class="gift">
+                        <div class="gift_special"></div>
+                        <div class="gift_img">
+                            <img src="" alt="">
+                            <div class="gift_img_hover">
+                                <div class="gift_icons">
+                                    <div class="gift_icon buy"></div>
+                                    <div class="gift_icon favor"></div>
+                                    <div class="gift_icon quick"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gift_brand_rate">
+                            <div class="gift_brand">
+                                <span>Бренд</span>
+                            </div>
+                            <div class="gift_rate">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                            </div>
+                        </div>
+                        <div class="gift_title">
+                            <span>Название продукта</span>
+                        </div>
+                        <div class="gift_category">
+                            <span>Категория продукта</span>
+                        </div>
+                        <div class="gift_prices">
+                            <span class="old_price">1000 руб.</span>
+                            <span class="price">500 руб.</span>
+                        </div>
+                    </div>
+                    <div class="gift">
+                        <div class="gift_special"></div>
+                        <div class="gift_img">
+                            <img src="" alt="">
+                            <div class="gift_img_hover">
+                                <div class="gift_icons">
+                                    <div class="gift_icon buy"></div>
+                                    <div class="gift_icon favor"></div>
+                                    <div class="gift_icon quick"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gift_brand_rate">
+                            <div class="gift_brand">
+                                <span>Бренд</span>
+                            </div>
+                            <div class="gift_rate">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                            </div>
+                        </div>
+                        <div class="gift_title">
+                            <span>Название продукта</span>
+                        </div>
+                        <div class="gift_category">
+                            <span>Категория продукта</span>
+                        </div>
+                        <div class="gift_prices">
+                            <span class="old_price">1000 руб.</span>
+                            <span class="price">500 руб.</span>
+                        </div>
+                    </div>
+                    <div class="gift">
+                        <div class="gift_special"></div>
+                        <div class="gift_img">
+                            <img src="" alt="">
+                            <div class="gift_img_hover">
+                                <div class="gift_icons">
+                                    <div class="gift_icon buy"></div>
+                                    <div class="gift_icon favor"></div>
+                                    <div class="gift_icon quick"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gift_brand_rate">
+                            <div class="gift_brand">
+                                <span>Бренд</span>
+                            </div>
+                            <div class="gift_rate">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                            </div>
+                        </div>
+                        <div class="gift_title">
+                            <span>Название продукта</span>
+                        </div>
+                        <div class="gift_category">
+                            <span>Категория продукта</span>
+                        </div>
+                        <div class="gift_prices">
+                            <span class="old_price">1000 руб.</span>
+                            <span class="price">500 руб.</span>
+                        </div>
+                    </div>
+                    <div class="gift">
+                        <div class="gift_special"></div>
+                        <div class="gift_img">
+                            <img src="" alt="">
+                            <div class="gift_img_hover">
+                                <div class="gift_icons">
+                                    <div class="gift_icon buy"></div>
+                                    <div class="gift_icon favor"></div>
+                                    <div class="gift_icon quick"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gift_brand_rate">
+                            <div class="gift_brand">
+                                <span>Бренд</span>
+                            </div>
+                            <div class="gift_rate">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                            </div>
+                        </div>
+                        <div class="gift_title">
+                            <span>Название продукта</span>
+                        </div>
+                        <div class="gift_category">
+                            <span>Категория продукта</span>
+                        </div>
+                        <div class="gift_prices">
+                            <span class="old_price">1000 руб.</span>
+                            <span class="price">500 руб.</span>
+                        </div>
+                    </div>
+                    <div class="gift">
+                        <div class="gift_special"></div>
+                        <div class="gift_img">
+                            <img src="" alt="">
+                            <div class="gift_img_hover">
+                                <div class="gift_icons">
+                                    <div class="gift_icon buy"></div>
+                                    <div class="gift_icon favor"></div>
+                                    <div class="gift_icon quick"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gift_brand_rate">
+                            <div class="gift_brand">
+                                <span>Бренд</span>
+                            </div>
+                            <div class="gift_rate">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                            </div>
+                        </div>
+                        <div class="gift_title">
+                            <span>Название продукта</span>
+                        </div>
+                        <div class="gift_category">
+                            <span>Категория продукта</span>
+                        </div>
+                        <div class="gift_prices">
+                            <span class="old_price">1000 руб.</span>
+                            <span class="price">500 руб.</span>
+                        </div>
+                    </div>
+                    <div class="gift">
+                        <div class="gift_special"></div>
+                        <div class="gift_img">
+                            <img src="" alt="">
+                            <div class="gift_img_hover">
+                                <div class="gift_icons">
+                                    <div class="gift_icon buy"></div>
+                                    <div class="gift_icon favor"></div>
+                                    <div class="gift_icon quick"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gift_brand_rate">
+                            <div class="gift_brand">
+                                <span>Бренд</span>
+                            </div>
+                            <div class="gift_rate">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                            </div>
+                        </div>
+                        <div class="gift_title">
+                            <span>Название продукта</span>
+                        </div>
+                        <div class="gift_category">
+                            <span>Категория продукта</span>
+                        </div>
+                        <div class="gift_prices">
+                            <span class="old_price">1000 руб.</span>
+                            <span class="price">500 руб.</span>
+                        </div>
+                    </div>
+                    <div class="gift">
+                        <div class="gift_special"></div>
+                        <div class="gift_img">
+                            <img src="" alt="">
+                            <div class="gift_img_hover">
+                                <div class="gift_icons">
+                                    <div class="gift_icon buy"></div>
+                                    <div class="gift_icon favor"></div>
+                                    <div class="gift_icon quick"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gift_brand_rate">
+                            <div class="gift_brand">
+                                <span>Бренд</span>
+                            </div>
+                            <div class="gift_rate">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                            </div>
+                        </div>
+                        <div class="gift_title">
+                            <span>Название продукта</span>
+                        </div>
+                        <div class="gift_category">
+                            <span>Категория продукта</span>
+                        </div>
+                        <div class="gift_prices">
+                            <span class="old_price">1000 руб.</span>
+                            <span class="price">500 руб.</span>
+                        </div>
+                    </div>
+                    <div class="gift">
+                        <div class="gift_special"></div>
+                        <div class="gift_img">
+                            <img src="" alt="">
+                            <div class="gift_img_hover">
+                                <div class="gift_icons">
+                                    <div class="gift_icon buy"></div>
+                                    <div class="gift_icon favor"></div>
+                                    <div class="gift_icon quick"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gift_brand_rate">
+                            <div class="gift_brand">
+                                <span>Бренд</span>
+                            </div>
+                            <div class="gift_rate">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                            </div>
+                        </div>
+                        <div class="gift_title">
+                            <span>Название продукта</span>
+                        </div>
+                        <div class="gift_category">
+                            <span>Категория продукта</span>
+                        </div>
+                        <div class="gift_prices">
+                            <span class="old_price">1000 руб.</span>
+                            <span class="price">500 руб.</span>
+                        </div>
+                    </div>
+                    <div class="gift">
+                        <div class="gift_special"></div>
+                        <div class="gift_img">
+                            <img src="" alt="">
+                            <div class="gift_img_hover">
+                                <div class="gift_icons">
+                                    <div class="gift_icon buy"></div>
+                                    <div class="gift_icon favor"></div>
+                                    <div class="gift_icon quick"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gift_brand_rate">
+                            <div class="gift_brand">
+                                <span>Бренд</span>
+                            </div>
+                            <div class="gift_rate">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                            </div>
+                        </div>
+                        <div class="gift_title">
+                            <span>Название продукта</span>
+                        </div>
+                        <div class="gift_category">
+                            <span>Категория продукта</span>
+                        </div>
+                        <div class="gift_prices">
+                            <span class="old_price">1000 руб.</span>
+                            <span class="price">500 руб.</span>
+                        </div>
+                    </div>
+                    <div class="gift">
+                        <div class="gift_special"></div>
+                        <div class="gift_img">
+                            <img src="" alt="">
+                            <div class="gift_img_hover">
+                                <div class="gift_icons">
+                                    <div class="gift_icon buy"></div>
+                                    <div class="gift_icon favor"></div>
+                                    <div class="gift_icon quick"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gift_brand_rate">
+                            <div class="gift_brand">
+                                <span>Бренд</span>
+                            </div>
+                            <div class="gift_rate">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                            </div>
+                        </div>
+                        <div class="gift_title">
+                            <span>Название продукта</span>
+                        </div>
+                        <div class="gift_category">
+                            <span>Категория продукта</span>
+                        </div>
+                        <div class="gift_prices">
+                            <span class="old_price">1000 руб.</span>
+                            <span class="price">500 руб.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="gift_action">
+                <div class="top_pagination">
+                    <a class="page" href="#" data-page="1">1</a>
+                    <a class="page" href="#" data-page="2">2</a>
+                    <a class="page" href="#" data-page="3">3</a>
+                    <a class="page" href="#" data-page="4">4</a>
+                    <a class="page" href="#" data-page="next"> > </a>
+                </div>
+            </div>
+        </section>
+        <aside class="aside">
+            <section class="dop_menu">
+                <header>
+                    <span class="title">Categories</span>
+                    <div class="burger"></div>
+                </header>
+                <ul class="left_menu">
+                    <li><a href="#">Категория</a></li>
+                    <li><a href="#">Категория</a></li>
+                    <li><a href="#">Категория</a></li>
+                    <li><a href="#">Категория</a></li>
+                    <li><a href="#">Категория</a></li>
+                    <li><a href="#">Категория</a></li>
+                    <li><a href="#">Категория</a></li>
+                    <li><a href="#">Категория</a></li>
+                    <li><a href="#">Категория</a></li>
+                    <li><a href="#">Категория</a></li>
+                    <li><a href="#">Категория</a></li>
+                </ul>
+            </section>
+            <section class="filter">
+                <div class="filter_param">
+                    <header>
+                        <span class="title">Параметр</span>
+                    </header>
+                    <div class="values">
+                        <label>
+                            <input class="checkbox" type="checkbox" name="value">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">параметр</span>
+                        </label>
+                        <label>
+                            <input class="checkbox" type="checkbox" name="value">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">параметр</span>
+                        </label>
+                        <label>
+                            <input class="checkbox" type="checkbox" name="value">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">параметр</span>
+                        </label>
+                        <label>
+                            <input class="checkbox" type="checkbox" name="value">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">параметр</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="filter_param">
+                    <header>
+                        <span class="title">Параметр</span>
+                    </header>
+                    <div class="values">
+                        <label>
+                            <input class="checkbox" type="checkbox" name="value">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">параметр</span>
+                        </label>
+                        <label>
+                            <input class="checkbox" type="checkbox" name="value">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">параметр</span>
+                        </label>
+                        <label>
+                            <input class="checkbox" type="checkbox" name="value">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">параметр</span>
+                        </label>
+                        <label>
+                            <input class="checkbox" type="checkbox" name="value">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">параметр</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="filter_param">
+                    <header>
+                        <span class="title">Параметр</span>
+                    </header>
+                    <div class="values">
+                        <label>
+                            <input class="checkbox" type="checkbox" name="value">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">параметр</span>
+                        </label>
+                        <label>
+                            <input class="checkbox" type="checkbox" name="value">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">параметр</span>
+                        </label>
+                        <label>
+                            <input class="checkbox" type="checkbox" name="value">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">параметр</span>
+                        </label>
+                        <label>
+                            <input class="checkbox" type="checkbox" name="value">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">параметр</span>
+                        </label>
+                    </div>
+                </div>
+            </section>
+            <section class="bestsellers">
+                <header>
+                    <div class="arrows">
+                        <div class="left_arrow"></div>
+                        <div class="right_arrow"></div>
+                    </div>
+                    <span class="title">Bestsellers</span>
+                </header>
+                <div class="bestsellers_sliders">
+                    <div class="bestseller_slide">
+                        <div class="bestseller_gift_left">
+                            <div class="bestsellers_gift_left_picture">
+                                <img src="" alt="">
+                            </div>
+                            <div class="bestsellers_gift_left_info">
+                                <span class="bestsellers_gift_left_brand">Brand</span>
+                                <span class="bestsellers_gift_left_name">Name</span>
+                                <div class="bestsellers_gift_left_prices">
+                                    <span class="old_price">1000 руб.</span>
+                                    <span class="price">500 руб.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bestseller_gift_left">
+                            <div class="bestsellers_gift_left_picture">
+                                <img src="" alt="">
+                            </div>
+                            <div class="bestsellers_gift_left_info">
+                                <span class="bestsellers_gift_left_brand">Brand</span>
+                                <span class="bestsellers_gift_left_name">Name</span>
+                                <div class="bestsellers_gift_left_prices">
+                                    <span class="old_price">1000 руб.</span>
+                                    <span class="price">500 руб.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bestseller_gift_left">
+                            <div class="bestsellers_gift_left_picture">
+                                <img src="" alt="">
+                            </div>
+                            <div class="bestsellers_gift_left_info">
+                                <span class="bestsellers_gift_left_brand">Brand</span>
+                                <span class="bestsellers_gift_left_name">Name</span>
+                                <div class="bestsellers_gift_left_prices">
+                                    <span class="old_price">1000 руб.</span>
+                                    <span class="price">500 руб.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bestseller_slide">
+                        <div class="bestseller_gift_left">
+                            <div class="bestsellers_gift_left_picture">
+                                <img src="" alt="">
+                            </div>
+                            <div class="bestsellers_gift_left_info">
+                                <span class="bestsellers_gift_left_brand">Brand</span>
+                                <span class="bestsellers_gift_left_name">Name</span>
+                                <div class="bestsellers_gift_left_prices">
+                                    <span class="old_price">1000 руб.</span>
+                                    <span class="price">500 руб.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bestseller_gift_left">
+                            <div class="bestsellers_gift_left_picture">
+                                <img src="" alt="">
+                            </div>
+                            <div class="bestsellers_gift_left_info">
+                                <span class="bestsellers_gift_left_brand">Brand</span>
+                                <span class="bestsellers_gift_left_name">Name</span>
+                                <div class="bestsellers_gift_left_prices">
+                                    <span class="old_price">1000 руб.</span>
+                                    <span class="price">500 руб.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bestseller_gift_left">
+                            <div class="bestsellers_gift_left_picture">
+                                <img src="" alt="">
+                            </div>
+                            <div class="bestsellers_gift_left_info">
+                                <span class="bestsellers_gift_left_brand">Brand</span>
+                                <span class="bestsellers_gift_left_name">Name</span>
+                                <div class="bestsellers_gift_left_prices">
+                                    <span class="old_price">1000 руб.</span>
+                                    <span class="price">500 руб.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </aside>
+    </main>
+    <div class="clear"></div>
+    <div class="wrapper_footer">
+        <footer id="footer">
+
+        </footer>
+    </div>
+</div>
+</body>
+</html>
