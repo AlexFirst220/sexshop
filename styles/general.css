@@ -300,9 +300,24 @@ table {
     overflow: hidden;
 }
 
+.product_tabs_wrapper{
+    width: 624px;
+    height: 200px;
+    max-height: 300px;
+    position: relative;
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+}
+
 .tabs_gifts{
     width: 4440px;
     height: inherit;
+    position: absolute;
+    left: 0;
+}
+
+.product_tabs{
+    width: 2200px;
     position: absolute;
     left: 0;
 }
@@ -316,7 +331,16 @@ table {
     margin: 0 auto;
 }
 
-.tabs_links ul li{
+.product_tabs_links{
+    height: 45px;
+    width: fit-content;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.tabs_links ul li, .product_tabs_links ul li{
     float: left;
     height: 45px;
     line-height: 45px;
@@ -327,23 +351,30 @@ table {
     margin-bottom: 40px;
 }
 
-.tabs_links ul li:last-child{
+.tabs_links ul li:last-child, .product_tabs_links ul li:last-child{
     margin-right: 0;
 }
 
-.tabs_links ul li a{
+.tabs_links ul li a, .product_tabs_links ul li a{
     text-decoration: none;
     color: #444444;
     padding: 15px;
 }
 
-.tabs_links ul li a.active{
+.tabs_links ul li a.active, .product_tabs_links ul li a.active{
     border-bottom: 2px solid #444444;
 }
 
 .tabs_gifts .tab{
     width: 1110px;
     height: 932px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.product_tabs .product_tab{
+    width: 624px;
     position: relative;
     overflow: hidden;
     float: left;
@@ -358,7 +389,20 @@ table {
     position: relative;
 }
 
-.gift:nth-child(4n){
+.related .gift{
+    width: 276px;
+    height: 455px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 22px;
+    position: relative;
+}
+
+.gifts .gift:nth-child(4n){
+    margin-right: 0;
+}
+
+.related .gift:nth-child(5n){
     margin-right: 0;
 }
 
@@ -374,6 +418,13 @@ table {
 
 .gift_img{
     width: 261px;
+    height: 339px;
+    background-color: #e5e5e5;
+    position: relative;
+}
+
+.related .gift_img{
+    width: 276px;
     height: 339px;
     background-color: #e5e5e5;
     position: relative;
@@ -446,12 +497,30 @@ table {
     float: left;
 }
 
+.product_brand{
+    font-size: 12px;
+    color: #bcbcbc;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    float: left;
+}
+
 .gift_title{
     color: #5d5d5d;
     font-size: 15px;
     font-family: "Roboto", sans-serif;
     height: 33px;
     clear: both;
+}
+
+.product_name{
+    color: #5d5d5d;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    height: 15px;
+    clear: both;
+    margin-bottom: 26px;
 }
 
 .gift_category{
@@ -467,6 +536,17 @@ table {
     font-style: italic;
     font-weight: 700;
     font-size: 18px;
+}
+
+.product_prices{
+    height: 15px;
+    position: relative;
+    color: #333333;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 30px;
 }
 
 .old_price{
@@ -990,3 +1070,181 @@ table {
     float: left;
 }
 
+
+.product, .basket_cart {
+    margin-bottom: 60px;
+}
+
+.product .photos {
+    width: 820px;
+    position: relative;
+    height: 846px;
+    float: left;
+}
+
+.product .photos .small_photos{
+    width: 151px;
+    position: relative;
+    float: left;
+}
+
+.product .photos .small_photo{
+    width: 151px;
+    height: 196px;
+    background-color: #e7e7e7;
+    margin-bottom: 20px;
+}
+
+.product .photos .big_photo{
+    width: 651px;
+    height: 846px;
+    position: relative;
+    float: right;
+    background-color: #e7e7e7;
+}
+
+.product .product_info{
+    width: 624px;
+    float: right;
+    position: relative;
+}
+
+.product_rate{
+    display: block;
+    width: fit-content;
+    position: relative;
+    height: 11px;
+    margin-bottom: 15px;
+}
+
+.product_rate .star{
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+.product_availability, .product_article{
+    margin-bottom: 40px;
+    color: #969696;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.product_availability{
+    margin-bottom: 15px;
+}
+
+.product_article{
+    margin-bottom: 40px;
+}
+
+.product_tab .details{
+    width: 400px;
+    border: none;
+}
+
+.product_tab .details tr{
+    height: 40px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.product_tab .details tr:last-child{
+    border-bottom: none;
+}
+
+.product_tab .details tr td{
+    width: 50%;
+    border-left: 1px solid #e7e7e7;
+    border-collapse: collapse;
+    line-height: 40px;
+    text-align: center;
+}
+
+.product_tab .details tr td:first-child{
+    border-left: none;
+}
+
+.product_color{
+    margin-bottom: 40px;
+}
+
+.product_color span{
+    margin-bottom: 20px;
+    display: block;
+}
+
+.product_color .color{
+    display: inline-block;
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.product_size{
+    margin-bottom: 40px;
+}
+
+.product_size span{
+    margin-bottom: 20px;
+    display: block;
+}
+
+.product_size .size{
+    display: inline-block;
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border: 1px solid #e7e7e7;
+    text-align: center;
+    line-height: 36px;
+}
+
+.product_size .size.active{
+    border: 1px solid #313537;
+}
+
+.actions .count{
+    width: 60px;
+    height: 44px;
+    box-sizing: border-box;
+    border: 1px solid #313537;
+    text-align: center;
+    line-height: inherit;
+    font-size: 15px;
+    float: left;
+    margin-right: 30px;
+}
+
+.actions .button_buy{
+    width: 148px;
+    height: 44px;
+    box-sizing: border-box;
+    background-color: #313537;
+    text-align: center;
+    line-height: 44px;
+    font-size: 15px;
+    float: left;
+    margin-right: 30px;
+    color: white;
+    font-family: 'Archivo Narrow', sans-serif;
+    cursor: pointer;
+}
+
+.related_title
+{
+    position: relative;
+    margin: 0 auto;
+    height: 45px;
+    width: fit-content;
+    margin-bottom: 65px;
+}
+
+.related_title span{
+    border-bottom: 2px solid #444444;
+    padding: 15px;
+    text-transform: uppercase;
+    font-family: 'Archivo Narrow', serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
