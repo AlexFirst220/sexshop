@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Main Page</title>
     <link href="styles/general.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
     <script
             src="http://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -76,21 +77,57 @@
                     <thead>
                         <tr>
                             <th>Продукт</th>
-                            <th>Артикул</th>
-                            <th>Цена</th>
-                            <th>Количество</th>
-                            <th>Всего</th>
-                            <th></th>
+                            <th width="230">Артикул</th>
+                            <th width="180">Цена</th>
+                            <th width="200">Количество</th>
+                            <th width="180">Всего</th>
+                            <th width="70"><i class="fa fa-times" aria-hidden="true"></i></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="product">
+                                <div class="product_cart_info">
+                                    <div class="image">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <span class="name">Имя продукта</span>
+                                        <span class="small_info">Color: Black</span>
+                                        <span class="small_info">Size: XS</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="article"><span>АРТ123456789</span></td>
+                            <td class="product_prices"><span>100 руб.</span></td>
+                            <td class="count">
+                                <span class="plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                <input type="text" value="1" name="count">
+                                <span class="minus"><i class="fa fa-minus" aria-hidden="true"></i></span></td>
+                            <td class="product_prices"><span>100 руб.</span></td>
+                            <td class="delete"><i class="fa fa-times" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="product">
+                                <div class="product_cart_info">
+                                    <div class="image">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <span class="name">Имя продукта</span>
+                                        <span class="small_info">Color: Black</span>
+                                        <span class="small_info">Size: XS</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="article"><span>АРТ123456789</span></td>
+                            <td class="product_prices"><span>100 руб.</span></td>
+                            <td class="count">
+                                <span class="plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                <input type="text" value="1" name="count">
+                                <span class="minus"><i class="fa fa-minus" aria-hidden="true"></i></span></td>
+                            <td class="product_prices"><span>100 руб.</span></td>
+                            <td class="delete"><i class="fa fa-times" aria-hidden="true"></i></td>
                         </tr>
                     </tbody>
                 </table>

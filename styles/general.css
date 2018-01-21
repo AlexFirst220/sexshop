@@ -1248,3 +1248,91 @@ table {
     font-size: 18px;
     letter-spacing: 2px;
 }
+
+/* cart */
+
+.cart table{
+    width: 100%;
+    border-width: 1px;
+}
+
+.cart table thead tr{
+    height: 60px;
+    border: solid #f2f2f2 1px;
+}
+
+.cart table thead th{
+    vertical-align: middle;
+}
+
+.cart table tbody tr{
+    border-top: solid #f2f2f2 1px;
+    border-bottom: solid #f2f2f2 1px;
+    height: 260px;
+    box-sizing: border-box;
+}
+
+.cart table tbody tr td{
+    border: solid #f2f2f2 1px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.cart table tbody tr td.product .product_cart_info{
+    text-align: left;
+    margin-left: 40px;
+    position: absolute;
+}
+
+.cart table tbody tr td.product .product_cart_info .image{
+    display: inline-block;
+    width: 170px;
+    height: 200px;
+    background-color: #f2f2f2;
+    float: left;
+    margin-right: 20px;
+}
+
+.cart table tbody tr td.product .product_cart_info .info{
+    float: left;
+}
+
+.cart table tbody tr td.product .product_cart_info .info span{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.cart table tbody tr td.product .product_cart_info .info span.name{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: 700;
+    color: #333333;
+}
+
+.cart table tbody tr td.product .product_cart_info .info span.small_info{
+    font-family: "Roboto", sans-serif;
+    color: #bcbcbc;
+    font-size: 13px;
+}
+
+.cart table tbody tr td.count span{
+    display: inline-block;
+}
+
+.cart table tbody tr td.count span.plus{
+    margin-right: 5px;
+}
+
+.cart table tbody tr td.count span.minus{
+    margin-left: 5px;
+}
+
+.cart table tbody tr td.count input{
+    display: inline-block;
+    width: 94px;
+    height: 34px;
+    box-sizing: border-box;
+    border: 1px solid #f2f2f2;
+    margin: 0 auto;
+    text-align: center;
+}
